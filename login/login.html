@@ -1,0 +1,141 @@
+<!DOCTYPe html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">    
+    </head>
+    <script>
+        function sign()
+        {alert("you have been signed successfullu");}
+        
+    </script>
+    <style>
+        body
+        {
+            width: 700px;
+                 background-image:linear-gradient(90deg,blueviolet,aqua,blueviolet);    /*خلفيه لها اكثر من لون*/
+                 
+                 
+        }
+        .f{text-align: center;
+            position: relative;
+            left: 200px;
+            top: 200px;
+        }
+        
+        div
+        {
+           text-align: center;
+            position: relative;
+            left: 480px;
+            top: 150px
+        }
+        form
+        {
+            text-align: center;  
+            border-bottom-color: cornflowerblue;
+            
+        }
+        
+        .field
+            {
+                background-image: url(OIP.jpg);
+                opacity: 0.9;
+                  background-repeat: no-repeat, repeat;
+                transform: scaleX(1.2);
+                background-size: 400px 300px;       /*للتحكم في ابعاد الصور*/
+                shape-image-threshold:5px; 
+                text-align: center;
+                width: 400px;
+                height: 300px;
+                padding: 10px;
+                border: 2px;
+                margin: 2px;
+                border-radius: 30px;            /*لعمل دوران عند الجوانب*/
+                border-style: solid;
+                border-color: green;
+                box-shadow: 4px 3px 5px 2px;     /*لعمل ظل للشكل*/
+                border-color: darkblue;
+                left: 500px;            /*ازاحه لليسار*/
+                cursor: pointer;
+               
+
+            }
+        .div {
+                  width: 100px;
+                  height: 100px;
+                  position: relative;
+                  animation-name: example;
+                  animation-duration: 10s;
+                  animation-direction: alternate;
+                  animation-timing-function: linear;
+                  animation-iteration-count: infinite;
+                
+                }
+
+         @keyframes example 
+            {
+              0%   {background-image: url(salim.jpg);background-size: 100px 100px;left: 200px;top: -300px;border-radius: 50%;}
+              25%  {background-image: url(salim.jpg);background-size: 100px 100px;left: 1000px;top:-300px;border-radius: 50%; }
+              50%  {background-image: url(salim.jpg);background-size: 100px 100px;left: 1000px;top:200px;border-radius: 50%; }
+              75%  {background-image: url(salim.jpg);background-size: 100px 100px;left: 200px;top: 200px;border-radius: 50%;}
+              100% {background-image: url(salim.jpg);background-size: 100px 100px;left:200px;top: -300px;border-radius: 50%;}
+            }
+        .legend
+        {
+            border-radius: 10px;
+            border: 1px solid#ddd;
+            border-color: green;
+            height: auto;
+            width: auto;
+        }
+        input
+        {
+            border-radius: 10px;
+            text-align: center;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            background-color: aquamarine;
+            color: darkviolet;
+            font-size: 20px;
+            font-style: italic;
+            height: 30px;
+        }
+       
+        img
+        {
+            border-radius: 20px;
+            opacity: 0.2;
+        }
+        img:hover {
+  box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+}
+    </style>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+
+    <body >
+       
+        <div>
+            <form action="">
+                <fieldset class="field">
+                    <legend class="legend">  <!--<img src="google.jpg" width="80px" height="30px" >--><i class="glyphicon glyphicon-user" title="login"> </i></legend>
+                    <br>
+                    <input type="text" placeholder="user_name" ><br><br>
+                    <input type="password" placeholder="password"><br><br>
+                    <input type="submit" value="login" value="sign" onclick="sign()"> 
+                    <hr>
+                    <i class="glyphicon glyphicon-thumbs-up"></i>
+                    <i class="fas fa-heart"></i>
+                    <i class="fas fa-car"></i>
+                    <i class="fas fa-user"></i>
+                    <i class="fas fa-file"></i>
+                    <i class="fas fa-bars"></i>
+                    <br>
+                    <a href="file:///C:/Users/salem/OneDrive/Desktop/html/complete_form.html" target="_blank" style="font-style: italic">Salim websie</a>
+                   
+                </fieldset>
+            </form>
+        </div>
+        <div class="div"></div>
+        
+    </body> 
+</html>
